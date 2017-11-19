@@ -1,23 +1,25 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">
-    <img src="./assets/logo.png" alt="Wolf Logo" height="30px">
-    <strong>Angel Marin</strong>
-  </a>
-  <div class="collapse navbar-collapse mt-0 mb-0" id="navbar-sections">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item" *ngFor="let section of sections">
-        <a href="#{{section.value}}" class="nav-link pr-3 pl-3">
-          {{ change_lenguage ? section.key_en : section.key_es }}
+<section id="navbar">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" alt="Wolf Logo" height="30px">
+      <strong>Angel Marin</strong>
+    </a>
+    <div class="collapse navbar-collapse mt-0 mb-0" id="navbar-sections">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" *ngFor="let section of sections">
+          <a href="#{{section.value}}" class="nav-link pr-3 pl-3">
+            {{ change_lenguage ? section.key_en : section.key_es }}
+          </a>
+        </li>
+      </ul>
+      <div class="btn-group mt-0 mb-2 mb-lg-0 ml-3 ml-lg-1" data-toggle="buttons">
+        <a class="btn btn-outline-light pl-3 pr-3 pl-lg-2 pr-lg-2" (click)="change_lenguage = !change_lenguage">
+          <span>{{ change_lenguage ? 'EN' : 'ES'}}</span>
         </a>
-      </li>
-    </ul>
-    <div class="btn-group mt-0 mb-2 mb-lg-0 ml-3 ml-lg-1" data-toggle="buttons">
-      <a class="btn btn-outline-light pl-3 pr-3 pl-lg-2 pr-lg-2" (click)="change_lenguage = !change_lenguage">
-        <span>{{ change_lenguage ? 'EN' : 'ES'}}</span>
-      </a>
+      </div>
     </div>
-  </div>
-  <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbar-sections" aria-controls="navbar-sections" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</nav>
+    <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#navbar-sections" aria-controls="navbar-sections" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</section>
