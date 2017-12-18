@@ -3,13 +3,14 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (max-height: 480px) {
   #headline {
     height: 300px;
   }
-  .jumbotron {
+  #headline .jumbotron {
     padding-top: 50px;
   }
 }
@@ -18,7 +19,7 @@
   #headline {
     height: 480px;
   }
-  .jumbotron {
+  #headline .jumbotron {
     padding-top: 100px;
   }
 }
@@ -27,7 +28,7 @@
   #headline {
     height: 720px;
   }
-  .jumbotron {
+  #headline .jumbotron {
     padding-top: 200px;
   }
 }
@@ -36,18 +37,18 @@
   #headline {
     height: 1080px;
   }
-  .jumbotron {
+  #headline .jumbotron {
     padding-top: 300px;
   }
 }
 
-.jumbotron {
+#headline .jumbotron {
   background: transparent;
   text-align: center;
   color: white;
 }
 
-hr {
+#headline hr {
   color: white;
   border-width: 2px;
   border-color: white;
@@ -55,37 +56,37 @@ hr {
 }
 
 @media (max-width: 575px) {
-  .employment_id {
+  #headline .employment_id {
     font-size: .70em;
   }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
-  .employment_id {
+  #headline .employment_id {
     font-size: .80em;
   }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .employment_id {
+  #headline .employment_id {
     font-size: .90em;
   }
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
-  .employment_id {
+  #headline .employment_id {
     font-size: 1em;
   }
 }
 
-.employment_id {
+#headline .employment_id {
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
   letter-spacing: .10em;
 }
 
-.jumbotron a {
+#headline .jumbotron a {
   border-radius: 50%;
   width: 40px;
 }

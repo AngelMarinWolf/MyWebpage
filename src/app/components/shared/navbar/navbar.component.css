@@ -2,3 +2,8 @@ nav {
   background-color: #222;
   color: white;
 }
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  color: black;
+}
