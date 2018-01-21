@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Section } from "../../../class/section";
+import { Section } from "../../../interface/textinfo";
+import { LanguageSelectionService } from '../../../services/language-selection.service'
 
 @Component({
   selector: 'app-navbar',
@@ -18,13 +19,16 @@ export class NavbarComponent implements OnInit {
     {key_en: "Contact",key_es: "Contacto",value: "contact"}
   ];
 
-  private change_lenguage: boolean = true;
-
-  constructor() {
+  constructor( private _lenguageService:LanguageSelectionService ) {
 
   }
 
   ngOnInit() {
+
+  }
+
+  select_lenguage() {
+    this._lenguageService.change_lenguage();
   }
 
 }

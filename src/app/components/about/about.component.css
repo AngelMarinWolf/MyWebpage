@@ -1,0 +1,35 @@
+.jumbotron {
+  background-color: #17181A;
+  color: white;
+  border-radius: 0;
+}
+
+.container {
+  font-size: 1.25em;
+}
+
+.profile_img {
+  max-height: 400px;
+}
+
+.profile_desc {
+  text-align: justify;
+}
+
+.progress-bar {
+  background-color: #4e82a3;
+  animation: progress 2s ease-in-out forwards;
+}
+
+.badge-secondary {
+  background-color: #688191;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
