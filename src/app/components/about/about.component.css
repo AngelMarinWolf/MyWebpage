@@ -18,6 +18,9 @@
 
 .progress-bar {
   background-color: #4e82a3;
+}
+
+#about:hover div .progress-bar {
   animation: progress 2s ease-in-out forwards;
 }
 

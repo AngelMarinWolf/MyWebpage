@@ -1,0 +1,19 @@
+#skills_section .jumbotron {
+  background-color: #155185;
+  color: white;
+  border-radius: 0;
+}
+
+#skills_section .container {
+  font-size: 1.25em;
+}
+
+#skills_section .container img {
+  
+  height: 100%;
+}
+
+#skills_section .container a {
+  width: 100%;
+  text-decoration: none;
+}

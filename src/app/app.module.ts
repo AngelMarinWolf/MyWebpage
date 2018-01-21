@@ -21,6 +21,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeadlineComponent } from './components/headline/headline.component';
 import { AboutComponent } from './components/about/about.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     NavbarComponent,
     FooterComponent,
     HeadlineComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
