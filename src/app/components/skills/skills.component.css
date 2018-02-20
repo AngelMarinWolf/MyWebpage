@@ -2,15 +2,19 @@
   background-color: #155185;
   color: white;
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 #skills_section .container {
   font-size: 1.25em;
+  position: relative;
 }
 
 #skills_section .container img {
-  
-  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #skills_section .container a {

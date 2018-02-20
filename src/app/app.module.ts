@@ -22,6 +22,7 @@ import { HeadlineComponent } from './components/headline/headline.component';
 import { AboutComponent } from './components/about/about.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     FooterComponent,
     HeadlineComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

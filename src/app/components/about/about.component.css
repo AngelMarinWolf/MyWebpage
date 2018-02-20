@@ -18,6 +18,7 @@
 
 .progress-bar {
   background-color: #4e82a3;
+  animation: progress-out 2s ease-in-out forwards;
 }
 
 #about:hover div .progress-bar {
@@ -30,9 +31,22 @@
 
 @keyframes progress {
   from {
+    color: transparent;
     width: 0;
   }
   to {
+    color: white;
     width: 100%;
+  }
+}
+
+@keyframes progress-out {
+  from {
+    width: 100%;
+    color: white;
+  }
+  to {
+    width: 0;
+    color: transparent;
   }
 }
