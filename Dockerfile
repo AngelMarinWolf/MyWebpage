@@ -1,5 +1,5 @@
 # Build Image
-FROM node:8.11-alpine as build
+FROM node:8.11 as build
 
 WORKDIR /var/app
 
@@ -18,9 +18,9 @@ LABEL name="Angel Web Page" \
       version="2.0" \
       maintainer="Angel Marin <marin.miguelangel96@gmail.com>"
 
-COPY Docker/nginx/templates/nginx.conf /etc/nginx/nginx.conf
+COPY Docker/nginx/nginx.conf /etc/nginx/nginx.conf
 
-COPY Docker/nginx/templates/000-app.conf /etc/nginx/conf.d/
+COPY Docker/nginx/000-app.conf /etc/nginx/conf.d/
 
 WORKDIR /var/app
 
