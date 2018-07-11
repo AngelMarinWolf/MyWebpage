@@ -1,15 +1,15 @@
 # Build Image
-FROM node:10.6-alpine as build
+FROM node:8.11-alpine as build
 
 WORKDIR /var/app
 
 COPY package.json package-lock.json ./
 
-RUN npm ci
+RUN npm install && npm install -g @angular/cli
 
 COPY . ./
 
-RUN npm build
+RUN ng build
 
 # Runtime Image
 FROM nginx:1.14-alpine as artifact
